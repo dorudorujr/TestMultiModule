@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		15CF7FB02B086430004C3AA3 /* TestMultiModuleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF7FAF2B086430004C3AA3 /* TestMultiModuleApp.swift */; };
-		15CF7FB22B086430004C3AA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF7FB12B086430004C3AA3 /* ContentView.swift */; };
 		15CF7FB42B086433004C3AA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CF7FB32B086433004C3AA3 /* Assets.xcassets */; };
 		15CF7FB72B086433004C3AA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CF7FB62B086433004C3AA3 /* Preview Assets.xcassets */; };
-		15CF7FC12B086433004C3AA3 /* TestMultiModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF7FC02B086433004C3AA3 /* TestMultiModuleTests.swift */; };
-		15CF7FCB2B086433004C3AA3 /* TestMultiModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF7FCA2B086433004C3AA3 /* TestMultiModuleUITests.swift */; };
-		15CF7FCD2B086433004C3AA3 /* TestMultiModuleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF7FCC2B086433004C3AA3 /* TestMultiModuleUITestsLaunchTests.swift */; };
+		15CF7FDC2B08ADE1004C3AA3 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 15CF7FDB2B08ADE1004C3AA3 /* AppFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +33,11 @@
 /* Begin PBXFileReference section */
 		15CF7FAC2B086430004C3AA3 /* TestMultiModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMultiModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CF7FAF2B086430004C3AA3 /* TestMultiModuleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMultiModuleApp.swift; sourceTree = "<group>"; };
-		15CF7FB12B086430004C3AA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15CF7FB32B086433004C3AA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CF7FB62B086433004C3AA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15CF7FBC2B086433004C3AA3 /* TestMultiModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMultiModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15CF7FC02B086433004C3AA3 /* TestMultiModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMultiModuleTests.swift; sourceTree = "<group>"; };
 		15CF7FC62B086433004C3AA3 /* TestMultiModuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMultiModuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15CF7FCA2B086433004C3AA3 /* TestMultiModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMultiModuleUITests.swift; sourceTree = "<group>"; };
-		15CF7FCC2B086433004C3AA3 /* TestMultiModuleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMultiModuleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15CF7FD92B08A665004C3AA3 /* TestMultiModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TestMultiModule; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CF7FDC2B08ADE1004C3AA3 /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				15CF7FAE2B086430004C3AA3 /* TestMultiModule */,
-				15CF7FBF2B086433004C3AA3 /* TestMultiModuleTests */,
-				15CF7FC92B086433004C3AA3 /* TestMultiModuleUITests */,
+				15CF7FD92B08A665004C3AA3 /* TestMultiModule */,
 				15CF7FAD2B086430004C3AA3 /* Products */,
+				15CF7FDA2B08ADE1004C3AA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				15CF7FAF2B086430004C3AA3 /* TestMultiModuleApp.swift */,
-				15CF7FB12B086430004C3AA3 /* ContentView.swift */,
 				15CF7FB32B086433004C3AA3 /* Assets.xcassets */,
 				15CF7FB52B086433004C3AA3 /* Preview Content */,
 			);
@@ -110,21 +104,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		15CF7FBF2B086433004C3AA3 /* TestMultiModuleTests */ = {
+		15CF7FDA2B08ADE1004C3AA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15CF7FC02B086433004C3AA3 /* TestMultiModuleTests.swift */,
 			);
-			path = TestMultiModuleTests;
-			sourceTree = "<group>";
-		};
-		15CF7FC92B086433004C3AA3 /* TestMultiModuleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				15CF7FCA2B086433004C3AA3 /* TestMultiModuleUITests.swift */,
-				15CF7FCC2B086433004C3AA3 /* TestMultiModuleUITestsLaunchTests.swift */,
-			);
-			path = TestMultiModuleUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +127,9 @@
 			dependencies = (
 			);
 			name = TestMultiModule;
+			packageProductDependencies = (
+				15CF7FDB2B08ADE1004C3AA3 /* AppFeature */,
+			);
 			productName = TestMultiModule;
 			productReference = 15CF7FAC2B086430004C3AA3 /* TestMultiModule.app */;
 			productType = "com.apple.product-type.application";
@@ -257,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CF7FB22B086430004C3AA3 /* ContentView.swift in Sources */,
 				15CF7FB02B086430004C3AA3 /* TestMultiModuleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CF7FC12B086433004C3AA3 /* TestMultiModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CF7FCD2B086433004C3AA3 /* TestMultiModuleUITestsLaunchTests.swift in Sources */,
-				15CF7FCB2B086433004C3AA3 /* TestMultiModuleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +565,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15CF7FDB2B08ADE1004C3AA3 /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15CF7FA42B086430004C3AA3 /* Project object */;
 }
